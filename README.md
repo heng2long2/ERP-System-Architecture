@@ -1,7 +1,5 @@
-Absolutely! Here's a fully English, GitHub-flavored `README.md` file formatted according to GitHub markdown conventions, with no Chinese content — ready for copy-paste:
-
 ````markdown
-# XXX ERP System Architecture — Demo Interface
+# ERP System Architecture — Demo Interface
 
 ## 📌 Project Overview
 

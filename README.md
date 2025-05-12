@@ -32,14 +32,14 @@
 
 ```mermaid
 graph TD
-  A[填寫 Email/資訊] --> B{點擊操作按鈕}
-  B -->|新增資料| C[將資料加入表格]
-  B -->|清空輸入| D[清除欄位]
-  B -->|修改資料| E[更新選取列]
-  C --> F[每列有刪除按鈕]
-  F --> G[移除該列]
-  C --> H[點擊資料列]
-  H --> I[資料回填到輸入框]
+  A[Fill in Email/Info] --> B{Click Button}
+  B -->|Add Data| C[Append Row to Table]
+  B -->|Clear Input| D[Clear Fields]
+  B -->|Edit| E[Update Selected Row]
+  C --> F[Each Row Has Delete Button]
+  F --> G[Remove Row]
+  C --> H[Click Row]
+  H --> I[Populate Input Fields]
 
 ---
 

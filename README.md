@@ -30,16 +30,17 @@
 
 ## 🔁 操作流程
 
-```mermaid
-graph TD
-  A[Fill in Email/Info] --> B{Click Button}
-  B -->|Add Data| C[Append Row to Table]
-  B -->|Clear Input| D[Clear Fields]
-  B -->|Edit| E[Update Selected Row]
-  C --> F[Each Row Has Delete Button]
-  F --> G[Remove Row]
-  C --> H[Click Row]
-  H --> I[Populate Input Fields]
+1. 使用者輸入 Email 與資訊內容。
+2. 點擊 **「新增資料」**：
+   - 資料會加入下方表格。
+3. 點擊任一資料列：
+   - 將該筆資料自動回填至輸入欄位。
+4. 修改內容後，點擊 **「修改」**：
+   - 更新表格中選取的那一列。
+5. 點擊資料列右側的 **「刪除」** 按鈕：
+   - 刪除該筆資料。
+6. 點擊 **「清空輸入」**：
+   - 清除 Email 與資訊輸入欄位的內容。
 
 ---
 

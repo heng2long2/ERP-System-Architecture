@@ -1,105 +1,42 @@
-````markdown
-# ERP System Architecture — Demo Interface
+# ERP 系統架構 — 示範介面
 
-## 📌 Project Overview
+## 📌 專案簡介
 
-This project is a lightweight front-end module simulating a basic **ERP (Enterprise Resource Planning)** system. It is built with **Bootstrap 5** and **jQuery**, showcasing core CRUD functionalities: **Create**, **Read**, **Update**, and **Delete**.
+本專案是一個輕量級前端模組，用於模擬基本的 **ERP（企業資源規劃）** 系統。它使用 **Bootstrap 5** 和 **jQuery** 建構，展示了核心的 CRUD 功能：**新增**、**讀取**、**更新** 和 **刪除**。
 
-It serves as a foundational UI component for future integration with APIs, databases, or complete ERP back-end systems.
-
----
-
-## 🧱 Tech Stack
-
-| Category       | Technology                                  |
-|----------------|---------------------------------------------|
-| Front-End      | [Bootstrap 5.3.3](https://getbootstrap.com) |
-| JavaScript     | [jQuery 3.7.1](https://jquery.com)          |
-| Markup & Style | HTML, CSS, JavaScript                       |
-| Responsive     | ✅ Fully responsive design                   |
+此介面可作為未來與 API、資料庫或完整 ERP 後端系統整合的基礎元件。
 
 ---
 
-## 🖥️ Features
+## 🧱 技術堆疊
 
-- **Add Entry:** Input email and information, then add the entry to the table.
-- **Edit Entry:** Click a table row to populate the input fields, then update the data.
-- **Delete Entry:** Remove a specific row using the delete button.
-- **Clear Inputs:** Reset the input fields with a single click.
+| 類別         | 技術                                          |
+|--------------|-----------------------------------------------|
+| 前端框架     | [Bootstrap 5.3.3](https://getbootstrap.com)    |
+| JavaScript   | [jQuery 3.7.1](https://jquery.com)            |
+| 標記與樣式   | HTML、CSS、JavaScript                         |
+| 響應式設計   | ✅ 支援行動與桌面裝置                         |
 
 ---
 
-## 🔁 Interaction Flow
+## 🖥️ 功能介紹
+
+- **新增資料：** 輸入 Email 和資訊，然後加入至下方表格。
+- **修改資料：** 點擊資料列後會將資料回填至輸入欄，可進行修改後儲存。
+- **刪除資料：** 點擊刪除按鈕即可移除該列資料。
+- **清空輸入：** 一鍵清除所有輸入欄位。
+
+---
+
+## 🔁 操作流程
 
 ```mermaid
 graph TD
-  A[Fill in Email/Info] --> B{Click Button}
-  B -->|Add Data| C[Append Row to Table]
-  B -->|Clear Input| D[Clear Fields]
-  B -->|Edit| E[Update Selected Row]
-  C --> F[Each Row Has Delete Button]
-  F --> G[Remove Row]
-  C --> H[Click Row]
-  H --> I[Populate Input Fields]
-````
-
----
-
-## 📁 File Structure
-
-```
-erp-system/
-├── index.html       # Main HTML file with embedded scripts
-```
-
----
-
-## ⚙️ Core Logic
-
-* `$("#element").val()` and `.text()` used for input/output binding.
-* `.append()` dynamically injects new `<tr>` elements into the table body.
-* `.click()` used to bind dynamic event listeners.
-* `.parents("tr")` locates the related row for deletion or editing.
-* `.eq(index)` targets specific table cells during row updates.
-
----
-
-## 🚀 Future Improvements
-
-* ✅ Form validation (e.g., valid email format)
-* ✅ AJAX integration with back-end API
-* ✅ Persistent data with database connection (MySQL, MongoDB, etc.)
-* ✅ User authentication and role-based access
-* ✅ Component refactor using React, Vue, or other modern frameworks
-
----
-
-## 📸 UI Highlights
-
-* Clean layout with Bootstrap 5 styling
-* Responsive table with hover and striped rows
-* Modular, extensible script for CRUD operations
-
----
-
-## 📦 How to Run
-
-This is a static front-end project and requires no build tools or server. To run:
-
-```bash
-# Clone or download the repo
-# Open index.html in any modern browser
-```
-
----
-
-## 👨‍💻 Author
-
-Developed by an AI-based coding consultant (2025 edition), with real-world ERP architecture insights and modern web development practices.
-
----
-
-```
-
-Let me know if you want badges (e.g., "Made with Bootstrap", "Live Demo", "MIT License") or a screenshot added at the top.
-```
+  A[填寫 Email/資訊] --> B{點擊操作按鈕}
+  B -->|新增資料| C[將資料加入表格]
+  B -->|清空輸入| D[清除欄位]
+  B -->|修改資料| E[更新選取列]
+  C --> F[每列有刪除按鈕]
+  F --> G[移除該列]
+  C --> H[點擊資料列]
+  H --> I[資料回填到輸入框]
